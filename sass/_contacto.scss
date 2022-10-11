@@ -1,0 +1,43 @@
+.containerForm{
+    padding: 2em;
+
+    input{
+        margin-bottom: 1em;
+    }
+
+    select{
+        margin-bottom: 1em;
+    }
+
+    textarea{
+        margin-bottom: 1em;
+    }
+
+    button{
+        background-color: $colorPrim;
+        color: $colorSec;
+        border-color: $colorSec;
+    }
+
+    @media screen and (min-width: 992px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        form{
+            width: 50%;
+        }
+
+        input{
+            margin-bottom: 2em;
+        }
+    
+        select{
+            margin-bottom: 2em;
+        }
+    
+        textarea{
+            margin-bottom: 2em;
+        }
+    }
+}

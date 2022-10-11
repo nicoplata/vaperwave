@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&family=Titan+One&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorTer;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+.pageTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $colorSec;
+    padding: 3em;
+    font-family: 'Titan One', cursive;
+    font-size: 1em;
+    margin-top: 4.6rem;
+    color: $colorPrim;
+}

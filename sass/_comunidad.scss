@@ -1,0 +1,43 @@
+.containerComunidad{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    text-align: center;
+
+    .contenidoComunidad{
+        h3{
+            font-family: 'Titan One', cursive;
+            color: $colorPrim;
+            font-size: 2em;   
+        }
+        .postInfo{
+            font-size: 1em;
+        }
+
+        p{
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        img{
+            max-height: 400px;
+            margin-bottom: 4em;
+        }
+    }
+    @media screen and (min-width: 992px){
+        text-align: start;
+        margin: 2em 6em 2em 6em;
+
+        .contenidoComunidad{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 2em;
+
+            img{
+                max-height: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .product{
+        margin: 2em;
+        a{
+            text-decoration: none;
+        }
+        h2{
+            font-family: 'Titan One', cursive;
+            color: $colorPrim;
+        }
+        img{
+            max-height: 300px;
+            margin: 1em;
+        }
+        p{
+            padding: 2em;
+            .leermas{
+                font-weight: bold;
+                a{
+                    color: $colorPrim;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 992px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .product{
+            padding: 2em;
+        }
+    }
+}
+

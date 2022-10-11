@@ -1,0 +1,80 @@
+.shopContainer{
+    display: grid;
+    background-color: $colorTer;
+    grid-template-areas: 
+    "shopFilter"
+    "shopItem";
+
+    div{
+        background-color: $colorTer;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        padding: 2em;
+    }
+
+    .shopFilter{
+        grid-area: shopFilter;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin: 2em 1em;
+
+        li{
+            text-align: left;
+            list-style-type: none;
+
+            a{
+                text-decoration: none;
+                color: $colorPrim;
+            }
+        }
+    }
+
+    .shopItem{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+
+        img{
+            max-width: 200px;
+            border: 1pt solid $colorPrim;
+            margin-bottom: 20px;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+            transition-property: all;
+            transition-duration: 1s;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        .shopContainer{
+            display: grid;
+            background-color: $colorTer;
+            grid-template-areas:
+            "shopFilter"
+            1fr 1fr;
+        }
+
+        .shopItemContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media screen and (min-width: 992px){
+        .shopContainer{
+            display: grid;
+            background-color:$colorTer;
+            grid-template-areas:
+            "shopFilter"
+        }
+    
+        .shopItemContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
